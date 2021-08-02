@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = [4,-1,0,3,10] 
+        function Sort(arr){ //对数组进行排序
+            for(let i = 0; i < arr.length; i++){
+                let min = i;
+                for(let j = i + 1; j < arr.length; j++){
+                    if(arr[min] > arr[j]) min = j
+                }
+                if(min != i){
+                    [arr[i], arr[min]] = [arr[min], arr[i]]
+                }
+            }
+        }
+        function calcu(arr){ //变成平方
+            let arr2 = []
+            for(let i = 0; i < arr.length; i++){
+                arr2[i] = arr[i] * arr[i]
+            }
+            Sort(arr2)
+            return arr2
+        }
+        arr1 = calcu(arr1)
+        console.log(arr1)
+    </script>
+</body>
+</html>

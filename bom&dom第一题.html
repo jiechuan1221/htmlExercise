@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>1</title>
+   <style>
+       .but{
+           margin: 10px 10px 10px 10px;
+           position:static;
+       }
+   </style>
+</head>
+<body>
+
+    <div class="but">
+        <button id="theme">主题切换</button>
+        <button id="btn1">小</button>
+        <button id="btn2">中</button>
+        <button id="btn3">大</button>
+    </div>
+<div id = "A">
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;著名小说家R到山上去休息了三天，今天一清早就回到维也纳。他在车站上买了一份报纸，刚刚瞥了一眼报上的日期，
+        就记起今天是他的生日。他马上想到，已经四十一岁了。他对此并不感到高兴，也没觉得难过。他漫不经心地翻了一会报纸，便叫了一辆小汽车回到住所。仆</p>
+    <ul id="list">
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+    </ul>
+    <script>
+        let b = document.getElementById('A')
+        let size1 = document.getElementById('btn1')//小的字体
+        size1.addEventListener('click', function(){
+            b.style.fontSize = "15px"
+        })
+        
+        let size2 = document.getElementById('btn2')//中等字体
+        size2.addEventListener('click', function(){
+            b.style.fontSize = "35px"
+        })
+        let size3 = document.getElementById('btn3')//大的字体
+        size3.addEventListener('click', function(){
+            b.style.fontSize = "50px"
+        })
+        //主题切换
+        let theme = document.getElementById('theme')
+        let flag = true
+        theme.addEventListener('click', function(){
+            if(flag){
+                document.bgColor = "black"
+                b.style.color = "white"
+                flag = false
+            }
+            else{
+                document.bgColor = "white"
+                b.style.color = "black"
+                flag = true
+            }
+        })
+        document.title = '努力学习JavaScript!';
+    </script>
+</div>
+</body>
+</html>

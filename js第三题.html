@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三题</title>
+    <script type="text/javascript">
+        function Change(str){
+            let str1 = str.split(" ");         //字符串无法通过" "来进行判断，将字符串用该函数分割为几个数组，按照空格分割。
+            let b = new Array();
+            for(let i = 0; i < str1.length; i++)
+                b[i] = str1[i][0].toUpperCase() + str1[i].substring(1);   //b为分割后的数组的集合，将每个数组的第一个字符转为大写，加上剩下的字符
+            str1 = b.join(" ");
+            return str1;
+        }
+
+        let str = "hello world";
+        str = Change(str);
+        document.write(str);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS作业</title>
+    <style>
+        body {
+            background-color: rgba(239, 247, 250);
+            margin: 60px 0px 0px 0px;
+        }
+
+        button {
+            margin: 40px 0px 0px 0px;
+            color: rgb(128, 126, 126);
+            background-color: aliceblue; 
+            border: none;
+            width: 95px;
+            height: 30px;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            border: 1px rgb(182, 183, 184);
+            color: rgb(180, 163, 143);
+            background-color: rgb(233, 116, 116);
+            border-radius: 10px;
+            border-width: 100px;
+        }
+
+        #btn1 {
+            color: rgb(228, 207, 182);
+            background-color: rgb(233, 116, 116);
+            border-radius: 10px;
+        }
+        #btn1:hover{
+            color: rgb(209, 190, 167);
+            background-color: rgb(233, 116, 116);
+        }
+        table td {
+            width: 175px;
+            height: 130px;
+            background-color: rgb(255, 255, 255);
+            transition: 2s;
+        }
+        table td:hover{
+            width: 175px;
+            height: 130px;
+            border-radius: 200px;
+        }
+        #td1{
+            background-color: rgb(51, 209, 204);
+        }
+
+        .main,
+        .third {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .third {
+            margin: -30px 0px 0px 0px;
+        }
+
+        .thi {
+            border-bottom: 3px solid rgb(190, 243, 250);
+            margin: -20px 0px 0px 0px;
+        }
+
+        .forth {
+            margin: 10px 0px 0px 0px;
+        }
+
+        .fifth {
+            margin: -15px 0px 0px 0px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="11.png" width="80px">
+    </div>
+    <div class="main">
+        <br>
+        <p>
+            <font size="6">We Make This</font>
+        </p>
+    </div>
+    <div class="third">
+        <div class="thi">
+            <br>
+            <p>
+                <font size="2" color="lightgrey">PERAPER TO BE AMAZED</font>
+            </p>
+        </div>
+    </div>
+    <div class="main">
+        <button>All</button>&nbsp;&nbsp;
+        <button>Design</button>&nbsp;&nbsp;
+        <button>Code</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button>Photography</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button>Apps</button>
+    </div>
+    <!-- 表格的代码 -->
+    <div class="main">
+        <div class="forth">
+            <table width="900px" cellspacing="20px">
+                <tr>
+                    <td id="td1" align="center"><font color="aliceblue">Awnsome worke</font><br>/Design</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--最后一个按钮-->
+    <div class="main">
+        <div class="btn">
+            <div class="fifth">
+                <button id="btn1">I want more</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
