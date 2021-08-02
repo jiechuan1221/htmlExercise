@@ -1,0 +1,70 @@
+@import url("./l1.1.1.less");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#body {
+  background-color: rgba(239, 247, 250);
+  margin: 60px 0px 0px 0px;
+  .main:extend(.same) {
+    button {
+      margin: 40px 0px 0px 0px;
+      .btn2(rgb(128, 126, 126), aliceblue);
+      border: none;
+      width: 95px;
+      height: 30px;
+      transition: 0.5s;
+      &:hover {
+        border: 1px rgb(182, 183, 184);
+        .btn2(rgb(180, 163, 143), rgb(233, 116, 116));
+        border-radius: 10px;
+        border-width: 100px;
+      }
+    }
+    //带有边框的那一块东西
+    .third {
+      border-bottom: 3px solid rgb(190, 243, 250);
+      margin: -20px 0px 0px 0px;
+      button {
+        margin: 40px 0px 0px 0px;
+        .btn2(rgb(128, 126, 126), aliceblue);
+        border: none;
+        width: 95px;
+        height: 30px;
+        transition: 0.5s;
+        &:hover {
+          border: 1px rgb(182, 183, 184);
+          .btn2(rgb(180, 163, 143), rgb(233, 116, 116));
+          border-radius: 10px;
+          border-width: 100px;
+        }
+      }
+    }
+    //对八个方块的设置
+    .forth {
+      margin: 10px 0px 0px 0px;
+      table td {
+        width: 175px;
+        height: 130px;
+        background-color: rgb(255, 255, 255);
+        transition: 2s;
+        &:hover {
+          width: 175px;
+          height: 130px;
+          border-radius: 50%;
+        }
+      }
+      #td1 {
+        background-color: rgb(51, 209, 204);
+      }
+    }
+    .fifth {
+      margin: -15px 0px 0px 0px;
+    }
+    //最后一排的按钮设置
+    #btn1 {
+      .btn2(rgb(228, 207, 182), rgb(233, 116, 116));
+      border-radius: 10px;
+    }
+  }
+}

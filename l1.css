@@ -1,0 +1,75 @@
+.same,
+#body .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#body {
+  background-color: rgba(239, 247, 250);
+  margin: 60px 0px 0px 0px;
+}
+#body .main button {
+  margin: 40px 0px 0px 0px;
+  color: #807e7e;
+  background-color: aliceblue;
+  border: none;
+  width: 95px;
+  height: 30px;
+  transition: 0.5s;
+}
+#body .main button:hover {
+  border: 1px #b6b7b8;
+  color: #b4a38f;
+  background-color: #e97474;
+  border-radius: 10px;
+  border-width: 100px;
+}
+#body .main .third {
+  border-bottom: 3px solid #bef3fa;
+  margin: -20px 0px 0px 0px;
+}
+#body .main .third button {
+  margin: 40px 0px 0px 0px;
+  color: #807e7e;
+  background-color: aliceblue;
+  border: none;
+  width: 95px;
+  height: 30px;
+  transition: 0.5s;
+}
+#body .main .third button:hover {
+  border: 1px #b6b7b8;
+  color: #b4a38f;
+  background-color: #e97474;
+  border-radius: 10px;
+  border-width: 100px;
+}
+#body .main .forth {
+  margin: 10px 0px 0px 0px;
+}
+#body .main .forth table td {
+  width: 175px;
+  height: 130px;
+  background-color: #ffffff;
+  transition: 2s;
+}
+#body .main .forth table td:hover {
+  width: 175px;
+  height: 130px;
+  border-radius: 50%;
+}
+#body .main .forth #td1 {
+  background-color: #33d1cc;
+}
+#body .main .fifth {
+  margin: -15px 0px 0px 0px;
+}
+#body .main #btn1 {
+  color: #e4cfb6;
+  background-color: #e97474;
+  border-radius: 10px;
+}
